@@ -23,7 +23,7 @@ def signup():
 
     if username == "": # Validate Username
         username_error = "Please enter a valid username."
-    elif len(username) <= 3 or len(username) > 20:
+    elif len(username) < 3 or len(username) > 20:
         username_error = "Username must be between 3 and 20 characters long."
         username = ""
     elif " " in username:
